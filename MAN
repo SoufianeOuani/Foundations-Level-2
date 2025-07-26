@@ -1,0 +1,28 @@
+
+### 🧠 What is **MAN**?
+
+**MAN** stands for **Metropolitan Area Network**.
+
+* 🔗 It connects multiple **LANs** (Local Area Networks) within a **city or metropolitan area**.
+* 📏 Its size is **larger than a LAN**, but **smaller than a WAN**.
+* 🏙️ Example: A network that links the offices of a company across different areas of **Casablanca or New York**.
+
+---
+
+### 🕵️‍♂️ Comparison: **LAN vs MAN vs WAN**
+
+| Feature      | **LAN** (Local)              | **MAN** (Metropolitan)            | **WAN** (Wide)                        |
+| ------------ | ---------------------------- | --------------------------------- | ------------------------------------- |
+| 🌍 Coverage  | Small area (room, building)  | City or large campus              | Country or world                      |
+| 🖥️ Example  | Home, school, office network | City-wide ISP, university network | The Internet, multinational company   |
+| 🚀 Speed     | High                         | Moderate to high                  | Lower (due to long distances)         |
+| 🔌 Ownership | Owned by one organization    | Can be public or private          | Often public or shared infrastructure |
+| 💸 Cost      | Low                          | Medium                            | High                                  |
+
+---
+
+### 🔁 Summary:
+
+* **LAN** = Small, local (home or office).
+* **MAN** = Medium, city-wide (campus or company across a city).
+* **WAN** = Very large, global (Internet or international companies).
