@@ -1,0 +1,136 @@
+
+## 🌍 **IP Address Types Overview**
+
+IP addresses (both IPv4 and IPv6) are categorized based on:
+
+* **Scope** (Public or Private)
+* **Function** (Unicast, Multicast, etc.)
+* **How they're assigned** (Static or Dynamic)
+
+---
+
+## 🟦 PART 1: **IPv4 Address Types**
+
+### 🔹 1. **Private IP Address**
+
+* Used **within a local network** (home, office, etc.)
+* **Not routable on the internet**
+* Assigned by routers or manually
+
+| IP Range                      | Class |
+| ----------------------------- | ----- |
+| 10.0.0.0 – 10.255.255.255     | A     |
+| 172.16.0.0 – 172.31.255.255   | B     |
+| 192.168.0.0 – 192.168.255.255 | C     |
+
+Example: `192.168.1.10`
+
+---
+
+### 🔹 2. **Public IP Address**
+
+* **Globally unique**, used to connect to the **internet**
+* Assigned by **ISPs (Internet Service Providers)**
+* Example: `8.8.8.8` (Google DNS)
+
+---
+
+### 🔹 3. **Loopback IP Address**
+
+* Refers to **the local machine**
+* Always: `127.0.0.1`
+* Used for testing software/network on your own device
+
+---
+
+### 🔹 4. **APIPA (Automatic Private IP Addressing)**
+
+* Given automatically if DHCP server is not available
+* Range: `169.254.0.0 – 169.254.255.255`
+* Used in local networks temporarily
+
+---
+
+### 🔹 5. **Broadcast Address**
+
+* Used to send a message to **all devices** on a network
+* Example: `192.168.1.255` in a local network
+
+---
+
+### 🔹 6. **Multicast Address**
+
+* Used to send data to **a group of devices**
+* Range: `224.0.0.0 – 239.255.255.255`
+
+---
+
+## 🟩 PART 2: **IPv6 Address Types**
+
+### 🔹 1. **Unicast Address**
+
+* One-to-one communication
+* Device gets a **unique IPv6 address**
+* Example: `2001:db8::1`
+
+---
+
+### 🔹 2. **Multicast Address**
+
+* One-to-many communication
+* Sends data to **multiple devices at once**
+* Range: Starts with `ff00::/8`
+
+---
+
+### 🔹 3. **Anycast Address**
+
+* One-to-nearest communication
+* Data sent to **the nearest device** in a group (based on routing)
+* No special format (uses unicast-style addresses)
+
+---
+
+### 🔹 4. **Link-local Address**
+
+* Used only **within the same network segment (LAN)**
+* Always starts with: `fe80::/10`
+* Auto-assigned (like APIPA in IPv4)
+
+---
+
+### 🔹 5. **Loopback Address**
+
+* Same as in IPv4, refers to the local machine
+* Always: `::1`
+
+---
+
+## 🟨 PART 3: **Based on Assignment**
+
+### 🔸 1. **Static IP**
+
+* Manually assigned to a device
+* Doesn't change
+* Used for servers, printers, routers, etc.
+
+### 🔸 2. **Dynamic IP**
+
+* Assigned automatically by **DHCP**
+* May change over time
+* Used for most home devices (phones, laptops, etc.)
+
+---
+
+## ✅ Summary Table
+
+| Type       | IPv4 Example    | IPv6 Example                    | Purpose                     |
+| ---------- | --------------- | ------------------------------- | --------------------------- |
+| Public IP  | `8.8.8.8`       | `2001:4860:4860::8888`          | Internet access             |
+| Private IP | `192.168.1.1`   | `fd00::1` (ULA)                 | Local networks              |
+| Loopback   | `127.0.0.1`     | `::1`                           | Local testing               |
+| Link-local | `169.254.x.x`   | `fe80::1`                       | Same-network communication  |
+| Multicast  | `224.0.0.1`     | `ff02::1`                       | Group communication         |
+| Broadcast  | `192.168.1.255` | *N/A* (not in IPv6)             | All devices in IPv4 network |
+| Anycast    | *N/A*           | `2001:db8::1` (used as anycast) | Closest node routing        |
+
