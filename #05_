@@ -1,0 +1,83 @@
+
+## 🌐 What is IP?
+
+**IP (Internet Protocol)** is a set of rules that governs **how data is sent and received across networks**.
+
+* Every device connected to a network (like the internet) has an **IP address**, just like every house has a mailing address.
+* The IP address identifies **where the device is** so data can be routed correctly.
+
+---
+
+## 🔢 What is IPv4?
+
+### IPv4 = **Internet Protocol version 4**
+
+It is the **most commonly used version** of IP.
+
+### ✅ Example of an IPv4 address:
+
+```
+192.168.1.1
+```
+
+---
+
+## 🔍 Structure of IPv4
+
+* IPv4 uses **32 bits**.
+* Written as **four decimal numbers** (each from 0 to 255), separated by dots.
+* Each part is called an **octet** (8 bits).
+
+### Example:
+
+```
+11000000.10101000.00000001.00000001 → 192.168.1.1
+```
+
+---
+
+## 🎯 What is an IPv4 address used for?
+
+* To **identify a device** on a network.
+* To **route data** between source and destination.
+* Every website, phone, laptop, server has an IP.
+
+---
+
+## 📂 Types of IPv4 Addresses
+
+| Type              | Example         | Use Case                         |
+| ----------------- | --------------- | -------------------------------- |
+| Public IP         | 8.8.8.8         | Used on the internet             |
+| Private IP        | 192.168.1.10    | Used in home/office networks     |
+| Loopback          | 127.0.0.1       | Refers to the local machine      |
+| Broadcast         | 255.255.255.255 | Send to all devices on a network |
+| APIPA (Automatic) | 169.254.x.x     | Assigned when DHCP fails         |
+
+---
+
+## 🧠 How many IPv4 addresses exist?
+
+* Total: **2³² = 4,294,967,296** addresses
+* Many are reserved (private, multicast, etc.)
+* That's why we are moving to **IPv6** (which supports 340 undecillion addresses!)
+
+---
+
+## 🔧 Example Use in Real Life:
+
+* You type `google.com` in your browser.
+* DNS translates it to an IPv4 address like `142.250.190.78`.
+* Your computer connects to that IP using **TCP/IP**.
+
+---
+
+## ✅ Summary
+
+| Concept | Explanation                                          |
+| ------- | ---------------------------------------------------- |
+| IPv4    | 32-bit address used to identify devices on a network |
+| Format  | Four numbers separated by dots (e.g., 192.168.0.1)   |
+| Range   | 0.0.0.0 to 255.255.255.255                           |
+| Uses    | Communication, routing, identification               |
+
