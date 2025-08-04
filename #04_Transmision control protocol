@@ -1,0 +1,93 @@
+
+## 🔷 What is TCP?
+
+**TCP (Transmission Control Protocol)** is a **communication protocol** used to send data over the internet or any network.
+
+> It ensures that **data is delivered correctly, in order, and without errors** between two devices (computers, phones, servers...).
+
+---
+
+## ✅ Key Features of TCP
+
+| Feature                 | Description                                                               |
+| ----------------------- | ------------------------------------------------------------------------- |
+| 🔁 **Reliable**         | TCP ensures that all data sent is received, and retransmits it if needed. |
+| 📦 **Ordered**          | Packets arrive **in the same order** they were sent.                      |
+| 🧩 **Connection-based** | Requires a connection (called a **handshake**) before sending data.       |
+| 🔐 **Error Checking**   | TCP checks for errors in data and corrects them.                          |
+| 📥 **Flow Control**     | Avoids overwhelming the receiver by managing the data rate.               |
+
+---
+
+## 🔄 How TCP Works (Simplified)
+
+### 🔸 1. **Three-Way Handshake**
+
+To start communication:
+
+1. **Client → Server**: Sends `SYN` (synchronize)
+2. **Server → Client**: Sends `SYN-ACK`
+3. **Client → Server**: Sends `ACK`
+
+✅ Connection established.
+
+---
+
+### 🔸 2. **Data Transfer**
+
+* Data is split into small parts called **segments**.
+* Each segment is numbered.
+* TCP makes sure they arrive **in order**.
+* If a segment is **lost**, it is **retransmitted**.
+
+---
+
+### 🔸 3. **Connection Termination**
+
+* After data is sent, both sides agree to **close the connection** using `FIN` and `ACK` flags.
+
+---
+
+## 🧪 Real-Life Example:
+
+### Think of sending a long message via registered mail:
+
+* You break it into envelopes (segments).
+* Each envelope is numbered.
+* The receiver confirms receiving each one.
+* If one is missing, you resend it.
+* You don’t stop until the receiver gets **everything correctly**.
+
+That’s **TCP**.
+
+---
+
+## 🆚 TCP vs UDP
+
+| Feature     | **TCP**                      | **UDP**                      |
+| ----------- | ---------------------------- | ---------------------------- |
+| Connection  | Yes (handshake)              | No (connectionless)          |
+| Reliability | Reliable (resends lost data) | Unreliable (no guarantee)    |
+| Speed       | Slower                       | Faster                       |
+| Usage       | Web, email, file transfer    | Video streaming, games, VoIP |
+
+---
+
+## 🧠 Where is TCP used?
+
+* 🌐 **Web browsing (HTTP/HTTPS)**
+* 📩 **Email (SMTP, IMAP, POP3)**
+* 📁 **File transfers (FTP)**
+* 📦 **Data backup and sync**
+
+---
+
+## ✅ Summary
+
+| Term       | Meaning                                                |
+| ---------- | ------------------------------------------------------ |
+| TCP        | Transmission Control Protocol                          |
+| Goal       | Deliver data **reliably** and **in order**             |
+| Type       | **Connection-oriented** protocol                       |
+| Importance | Backbone of **reliable communication** on the internet |
+
