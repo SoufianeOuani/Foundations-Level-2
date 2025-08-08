@@ -1,0 +1,78 @@
+
+## **1. NAT (Network Address Translation)**
+
+### **What it is**
+
+**NAT** is a process where a router changes the **private IP addresses** inside your local network into a **public IP address** when going to the internet — and changes them back for incoming traffic.
+
+It’s like a **secretary** who knows everyone in the office by name but uses one public phone number when calling outside.
+
+---
+
+### **Why we need NAT**
+
+* IPv4 addresses are limited — NAT allows **multiple devices** to share a **single public IP**.
+* It adds a layer of **security**, because outside devices can’t directly see the private IPs.
+
+---
+
+### **Types of NAT**
+
+1. **Static NAT** — One private IP is always mapped to the same public IP (1-to-1 mapping).
+2. **Dynamic NAT** — Private IPs get mapped to any available public IP from a pool (randomized).
+3. **PAT** (*Port Address Translation*, also called NAT Overload) — Many devices share **one public IP** using **different ports**.
+
+   * This is the most common type in home routers.
+
+---
+
+### **Example**
+
+| Device   | Private IP   | Public IP (after NAT) |
+| -------- | ------------ | --------------------- |
+| Laptop   | 192.168.1.10 | 102.45.33.200:4001    |
+| Phone    | 192.168.1.11 | 102.45.33.200:4002    |
+| Smart TV | 192.168.1.12 | 102.45.33.200:4003    |
+
+---
+
+## **2. IP Mapping**
+
+**IP mapping** (or **Port Forwarding**) is a configuration in NAT that **forwards traffic** from a specific **public IP & port** to a **specific private IP & port** inside your network.
+
+---
+
+### **Why it’s used**
+
+* To make an internal device/service **accessible from outside**.
+* Example: Hosting a game server or a web server at home.
+
+---
+
+### **Example of IP Mapping**
+
+Let’s say you want to host a website on your PC:
+
+* **Your PC private IP:** 192.168.1.50
+* **Public IP of your router:** 102.45.33.200
+* **Website port:** 80 (HTTP)
+
+You create a port forwarding rule:
+
+```
+Public 102.45.33.200:80  →  Private 192.168.1.50:80
+```
+
+Now, anyone visiting `http://102.45.33.200` will reach your PC.
+
+---
+
+## **NAT vs IP Mapping (Quick View)**
+
+| Feature      | NAT                                | IP Mapping (Port Forwarding)                         |
+| ------------ | ---------------------------------- | ---------------------------------------------------- |
+| Main Purpose | Translate private IPs to public IP | Route specific external requests to internal devices |
+| Scope        | All devices on network             | One specific service/device                          |
+| Security     | Hides internal network             | Opens a door for specific traffic                    |
+| Usage        | Everyday internet sharing          | Hosting servers or remote access                     |
+
