@@ -1,0 +1,57 @@
+
+## **What is DHCP?**
+
+**DHCP** stands for **Dynamic Host Configuration Protocol**.
+It’s a network service that **automatically assigns**:
+
+1. **IP Address** (e.g., `192.168.1.15`)
+2. **Subnet Mask** (e.g., `255.255.255.0`)
+3. **Default Gateway** (e.g., `192.168.1.1`)
+4. **DNS Server** (e.g., `8.8.8.8`)
+
+Without DHCP, you’d have to manually type these for every device — and if two devices accidentally got the same IP, chaos would happen (called an **IP conflict**).
+
+---
+
+## **How DHCP Works (The DORA Process)**
+
+When a new device connects to a network, this 4-step process happens:
+
+1. **D – Discover**
+
+   * The device sends a broadcast message: *“Hey, is there a DHCP server here?”*
+2. **O – Offer**
+
+   * The DHCP server replies: *“Yes, here’s an available IP for you.”*
+3. **R – Request**
+
+   * The device says: *“Great, I’d like that IP, please.”*
+4. **A – Acknowledge**
+
+   * The DHCP server confirms: *“You got it. Here’s your full network info.”*
+
+---
+
+## **DHCP Lease**
+
+* The IP address is given for a **lease time** (e.g., 24 hours).
+* When the lease expires, the device must renew it — usually without you noticing.
+
+---
+
+## **Where is DHCP Found?**
+
+* **Home networks:** Usually your **router** (or gateway) acts as the DHCP server.
+* **Large networks:** Dedicated DHCP servers handle the job for many devices.
+
+---
+
+## **Analogy**
+
+Think of a **hotel**:
+
+* **You** = the device
+* **Reception desk** = the DHCP server
+* **Room number** = IP address
+* **Check-in process** = DORA steps
+  When you check in (connect), reception gives you an available room (IP). When you leave (disconnect), the room is freed for others.
