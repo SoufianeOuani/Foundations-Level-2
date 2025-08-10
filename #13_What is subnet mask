@@ -1,0 +1,61 @@
+
+## **Why It Exists**
+
+When you have an IP address like `192.168.1.15`, the computer needs to know:
+
+* Which part identifies the **network** (shared by all devices in that network)
+* Which part identifies the **host** (the unique device within that network)
+
+The **subnet mask** is the “divider” between these two parts.
+
+---
+
+## **Example**
+
+**IP Address:**
+
+```
+192.168.1.15
+```
+
+**Subnet Mask:**
+
+```
+255.255.255.0
+```
+
+In binary:
+
+```
+IP:     11000000.10101000.00000001.00001111
+Mask:   11111111.11111111.11111111.00000000
+```
+
+* **1s in the mask** = Network part
+* **0s in the mask** = Host part
+
+So:
+
+* Network part: `192.168.1`
+* Host part: `.15`
+
+---
+
+## **Common Subnet Masks**
+
+| Subnet Mask     | CIDR | Hosts per Network |
+| --------------- | ---- | ----------------- |
+| 255.0.0.0       | /8   | 16,777,214        |
+| 255.255.0.0     | /16  | 65,534            |
+| 255.255.255.0   | /24  | 254               |
+| 255.255.255.255 | /32  | 1 (single device) |
+
+---
+
+## **Analogy**
+
+Think of an **IP address** as a **street address**:
+
+* **Network part** = the street name (everyone on that street shares it)
+* **Host part** = the house number (unique to each house)
+  The **subnet mask** is like the rule that says *“the first 3 words are the street name, the last word is the house number”*.
