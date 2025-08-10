@@ -1,0 +1,47 @@
+
+## **1. Port**
+
+* **Definition:** A **port** is like a numbered “door” on a device (computer, server, router) where data enters or leaves.
+* **Purpose:** Allows multiple services to run on one IP address without mixing up their traffic.
+* **Type:** Ports are just **numbers** (0–65535) used in **TCP** or **UDP** networking.
+* **Example:**
+
+  * **HTTP** web traffic → Port **80**
+  * **HTTPS** secure web traffic → Port **443**
+  * **FTP** file transfer → Port **21**
+
+**Analogy:** Think of your IP address as your **apartment building**, and each **port** is a **specific apartment number** where a service lives.
+
+---
+
+## **2. Socket**
+
+* **Definition:** A **socket** is the **combination** of:
+
+  ```
+  IP Address + Port Number + Protocol (TCP/UDP)
+  ```
+* **Purpose:** It identifies a **specific connection** between two devices.
+* **Example:**
+
+  * Client: `192.168.1.10:51000 (TCP)`
+  * Server: `203.0.113.5:80 (TCP)`
+    Here, the **socket pair** is:
+
+  ```
+  (192.168.1.10:51000, 203.0.113.5:80)
+  ```
+
+**Analogy:** If a **port** is an apartment number, then a **socket** is like the **full address plus the door you’re knocking on** — it specifies exactly *who* is talking to *whom*.
+
+---
+
+## **Quick Table: Port vs Socket**
+
+| Feature    | Port                             | Socket                               |
+| ---------- | -------------------------------- | ------------------------------------ |
+| What it is | Logical number used by a service | Combination of IP + Port + Protocol  |
+| Identifies | A service on a device            | A specific network connection        |
+| Example    | 80 (HTTP)                        | `203.0.113.5:80 (TCP)`               |
+| Max Count  | 0–65535 per protocol             | Many (depends on active connections) |
+
