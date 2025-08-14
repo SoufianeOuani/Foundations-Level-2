@@ -1,0 +1,45 @@
+
+### **1. Definition**
+
+A **Subnet Mask** is a number (like `255.255.255.0`) that tells your computer **which part of an IP address is the network** and **which part is the host**.
+
+* **Network part** → Identifies the network you’re on (like a street name).
+* **Host part** → Identifies a specific device on that network (like a house number).
+
+---
+
+### **2. Why it’s needed**
+
+Without a subnet mask, your computer wouldn’t know:
+
+* Which devices are in your **local network** (talk directly to them)
+* Which devices are **outside your network** (send data through a router)
+
+---
+
+### **3. Example**
+
+If your IP is:
+
+```
+192.168.1.10  
+Subnet Mask: 255.255.255.0
+```
+
+* The `255` parts mean **network** (fixed).
+* The `0` part means **host** (can change).
+* So:
+
+  * **Network** = `192.168.1`
+  * **Host** = `10` (your device)
+
+This means any IP from `192.168.1.1` to `192.168.1.254` is in your local network.
+
+---
+
+### **4. Quick analogy**
+
+* **IP address** = Street + House number (e.g., “Main Street, House 12”)
+* **Subnet mask** = A rule saying: “All houses on **Main Street** belong to this neighborhood.”
+
+---
