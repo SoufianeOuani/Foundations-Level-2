@@ -1,0 +1,40 @@
+
+### **1. Socket**
+
+A **socket** is like a *doorway* inside a computer program that allows it to send and receive data over a network.
+
+* It’s created in your code using the operating system’s networking API.
+* It combines:
+
+  * **IP address** → *Where to send data*
+  * **Port number** → *Which service or program to send data to*
+* Example:
+
+  * Your browser creates a socket to connect to `142.250.190.78:443` (Google’s IP, port 443 for HTTPS).
+
+---
+
+### **2. Port**
+
+A **port** is like a numbered *mailbox* on a computer for network messages.
+
+* Each service (web server, email server, game server) listens on a specific port number.
+* Common examples:
+
+  * Port **80** → HTTP (web traffic)
+  * Port **443** → HTTPS (secure web traffic)
+  * Port **25** → SMTP (email sending)
+* Ports range from **0 to 65535**.
+
+  * **0–1023** → Well-known ports (standard services)
+  * **1024–49151** → Registered ports
+  * **49152–65535** → Dynamic/private ports
+
+---
+
+💡 **Quick analogy**
+
+* **IP address** = Street address of a building.
+* **Port** = Apartment number inside that building.
+* **Socket** = The open door connecting your room (program) to another person’s room on the network.
+
