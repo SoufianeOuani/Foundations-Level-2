@@ -1,0 +1,80 @@
+
+
+## **MAC Address – Media Access Control Address**
+
+### **1. Definition**
+
+A **MAC Address** (Media Access Control Address) is a **unique identifier** assigned to every network interface card (NIC) by its manufacturer.
+
+* It’s **hard-coded into the hardware** (in the card’s firmware).
+* It is used to **identify devices within a local network (LAN)**.
+* Example format:
+
+  ```
+  00:1A:2B:3C:4D:5E
+  ```
+
+---
+
+### **2. Format and Structure**
+
+* **Length:** 48 bits (6 bytes) long.
+* **Written in:** Hexadecimal notation (numbers 0–9 and letters A–F).
+* **Groups:** Six groups of two hexadecimal digits, separated by colons (:) or hyphens (-).
+
+**Example breakdown:**
+`00:1A:2B:3C:4D:5E`
+
+* **First 3 bytes** (00:1A:2B) → **OUI** (Organizationally Unique Identifier): identifies the manufacturer.
+* **Last 3 bytes** (3C:4D:5E) → Device-specific unique number.
+
+---
+
+### **3. Function**
+
+* Operates in the **Data Link Layer** (Layer 2) of the OSI model.
+* Used **only within the local network segment**.
+* Ensures that data packets reach the correct physical device in a LAN.
+
+---
+
+### **4. MAC vs. IP Address**
+
+| Feature     | MAC Address                             | IP Address                                      |
+| ----------- | --------------------------------------- | ----------------------------------------------- |
+| Assigned by | Manufacturer                            | Network administrator or automatically via DHCP |
+| Changes?    | Normally fixed, unless manually changed | Can change depending on the network location    |
+| Purpose     | Identifies the physical device          | Identifies the device’s location in the network |
+| Layer (OSI) | Data Link Layer (Layer 2)               | Network Layer (Layer 3)                         |
+| Analogy     | Car license plate                       | Street address                                  |
+
+---
+
+### **5. Real-life Analogy**
+
+Think of the MAC Address like a **car’s license plate**:
+
+* It is unique to the car (device).
+* It’s assigned when the car is manufactured.
+* Even if the car moves to a different city (network), the license plate stays the same.
+
+The IP Address is like the **street address** where the car is parked — it can change depending on where the car is located.
+
+---
+
+### **6. Example in Networking**
+
+When a computer wants to send data to another computer on the same local network:
+
+1. It uses the **IP address** to identify the target logically.
+2. It uses the **MAC address** to find the exact physical device.
+3. The **ARP protocol** (Address Resolution Protocol) is used to translate IP → MAC.
+
+---
+
+✅ **Key points for students to remember:**
+
+* MAC = Permanent physical identity (Layer 2).
+* IP = Logical location (Layer 3).
+* Both are essential for communication: MAC for delivery inside the LAN, IP for routing across networks.
+
