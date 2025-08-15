@@ -1,0 +1,48 @@
+
+
+## **Internet vs. WWW (World Wide Web)**
+
+### **1. Internet**
+
+* **Definition:** The Internet is a **global network of interconnected computers and devices** that communicate using standardized protocols (like TCP/IP).
+* **Function:** It allows computers to exchange data, send emails, stream videos, connect to servers, and more.
+* **Analogy:** Think of the Internet as the **entire road system** of the world. It connects cities, towns, and houses.
+
+**Examples of Internet services:**
+
+* Email (Gmail, Outlook)
+* File transfer (FTP)
+* Online games
+* Voice over IP (Skype, Zoom)
+
+---
+
+### **2. WWW (World Wide Web)**
+
+* **Definition:** The WWW is a **system of interlinked documents and resources**, accessed via **web browsers** using the HTTP/HTTPS protocol.
+* **Function:** It’s just **one of many services on the Internet** that lets you view web pages, videos, and online content.
+* **Analogy:** If the Internet is the road system, the WWW is like a **specific neighborhood with houses (websites) you can visit**.
+
+**Examples of WWW:**
+
+* Websites like Google, YouTube, Wikipedia
+* Web apps like Gmail (browser version), Facebook
+
+---
+
+### **3. Key Difference**
+
+| Feature    | Internet                                | WWW                               |
+| ---------- | --------------------------------------- | --------------------------------- |
+| Definition | Global network of computers             | System of linked web pages        |
+| Function   | Enables communication and data exchange | Displays information via browsers |
+| Protocols  | TCP/IP, FTP, SMTP, etc.                 | HTTP/HTTPS                        |
+| Scope      | Bigger – includes all internet services | Smaller – just web-based content  |
+
+---
+
+💡 **Summary for students:**
+
+* The **Internet** is the **network infrastructure**.
+* The **WWW** is a **service** that runs on top of the Internet, letting us access web pages and websites.
+
