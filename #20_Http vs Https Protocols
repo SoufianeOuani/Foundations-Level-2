@@ -1,0 +1,43 @@
+
+## **HTTP vs HTTPS Protocols**
+
+### **1. Definition**
+
+* **HTTP (HyperText Transfer Protocol):**
+  A protocol used to **transfer data** between your browser and a web server. It allows you to **view web pages** and send/receive information.
+
+* **HTTPS (HyperText Transfer Protocol Secure):**
+  The **secure version of HTTP**. It encrypts the data being sent and received, protecting it from hackers or eavesdroppers.
+
+---
+
+### **2. Key Differences**
+
+| Feature             | HTTP                        | HTTPS                          |
+| ------------------- | --------------------------- | ------------------------------ |
+| **Security**        | Not secure                  | Secure (data encrypted)        |
+| **Port Number**     | 80                          | 443                            |
+| **Data Protection** | Can be intercepted          | Encrypted with SSL/TLS         |
+| **Use**             | Basic websites, public info | Banking, shopping, login pages |
+| **URL Prefix**      | http\://                    | https\://                      |
+
+---
+
+### **3. How HTTPS Works**
+
+1. Your browser connects to the website.
+2. The server provides an **SSL/TLS certificate**.
+3. Browser and server **establish an encrypted connection**.
+4. All data sent between you and the server is **encrypted**, preventing hackers from stealing it.
+
+---
+
+### **4. Analogy**
+
+* **HTTP:** Like sending a **postcard** — anyone handling it can read your message.
+* **HTTPS:** Like sending a **sealed, locked envelope** — only the recipient can read the message.
+
+---
+
+💡 **Key takeaway:**
+Always prefer **HTTPS websites**, especially when sharing **sensitive information** like passwords, credit cards, or personal data.
