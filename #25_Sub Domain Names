@@ -1,0 +1,73 @@
+
+### **What is a Subdomain?**
+
+* A **Subdomain** is an additional part of your main domain name.
+* It appears **before the main domain name**.
+
+👉 Example:
+
+* Main domain: `example.com`
+* Subdomains:
+
+  * `blog.example.com`
+  * `shop.example.com`
+  * `mail.example.com`
+
+So, a **subdomain is like a child of the main domain**.
+
+---
+
+### **Why Use Subdomains?**
+
+1. **Organize different sections of a website**
+
+   * `store.mysite.com` → for e-commerce
+   * `support.mysite.com` → for help center
+
+2. **Separate services**
+
+   * `mail.google.com` → Gmail
+   * `drive.google.com` → Google Drive
+   * `maps.google.com` → Google Maps
+
+3. **Testing / Development**
+
+   * `dev.mysite.com` → development version
+   * `test.mysite.com` → testing environment
+
+4. **Multilingual sites**
+
+   * `en.wikipedia.org` → English version
+   * `fr.wikipedia.org` → French version
+
+---
+
+### **How Are Subdomains Created?**
+
+* Subdomains are managed through **DNS settings**.
+* On your domain’s DNS zone, you can create an **A record** or **CNAME record** for the subdomain and point it to a server.
+
+👉 Example DNS setup:
+
+* `A record` for `blog.example.com` → points to server IP `192.168.1.1`.
+* `CNAME record` for `shop.example.com` → points to `example.com`.
+
+---
+
+### **Difference Between Subdomain and Subdirectory**
+
+* **Subdomain:** `blog.example.com`
+* **Subdirectory:** `example.com/blog`
+
+Both are ways to organize content, but:
+
+* **Subdomains** are treated like separate entities in DNS.
+* **Subdirectories** are just folders inside your main website.
+
+---
+
+✅ **In summary:**
+
+* A **subdomain** is a prefix added to your main domain.
+* Useful for separating services, organizing content, testing, and multilingual versions.
+* Configured via DNS records.
