@@ -1,0 +1,81 @@
+
+### **What is FTP?**
+
+* **FTP** stands for **File Transfer Protocol**.
+* It is a **standard protocol** used to transfer files between a **client** (your computer) and a **server** over a network (like the Internet).
+
+👉 In simple words:
+FTP is like a “digital courier” that **uploads** files from your computer to a server or **downloads** files from a server to your computer.
+
+---
+
+### **How Does FTP Work?**
+
+* FTP follows the **client–server model**:
+
+  1. You (the client) connect to an FTP server.
+  2. You authenticate with a **username and password** (some servers allow anonymous login).
+  3. Once connected, you can:
+
+     * **Upload files** → from your local machine to the server.
+     * **Download files** → from the server to your machine.
+     * **Delete, rename, or move files** on the server.
+
+---
+
+### **FTP Structure**
+
+* **Port Numbers:**
+
+  * Default port for FTP = **21**.
+  * Some modes also use port **20** for data transfer.
+
+* **Two Modes of FTP:**
+
+  1. **Active Mode** – Server initiates the data connection.
+  2. **Passive Mode** – Client initiates both control and data connections (commonly used today, especially behind firewalls).
+
+---
+
+### **FTP Commands (Basic Examples)**
+
+If you use a command-line FTP client:
+
+* `ftp server.com` → connect to server
+* `user` → enter username
+* `pass` → enter password
+* `ls` → list files
+* `get file.txt` → download a file
+* `put file.txt` → upload a file
+* `bye` → exit
+
+---
+
+### **Limitations of FTP**
+
+* **Not secure**:
+
+  * Data (including username & password) is sent in **plain text**.
+  * Hackers can intercept easily.
+
+* **Solution:** Use secure versions:
+
+  * **FTPS** (FTP Secure) → FTP + SSL/TLS encryption.
+  * **SFTP** (SSH File Transfer Protocol) → works over SSH, more secure.
+
+---
+
+### **Real-World Uses of FTP**
+
+* Web developers use FTP to upload website files to a hosting server.
+* Companies use FTP to exchange large files between branches.
+* IT admins use it for server management and backups.
+
+---
+
+✅ **In summary:**
+
+* **FTP = File Transfer Protocol.**
+* Used for transferring files between client and server.
+* Runs on port **21**.
+* Not secure by default → use **FTPS or SFTP** for security.
