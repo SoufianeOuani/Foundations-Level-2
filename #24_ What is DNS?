@@ -1,0 +1,90 @@
+
+### **What is DNS?**
+
+* **DNS** stands for **Domain Name System**.
+* Think of it as the **phonebook of the Internet**.
+* Its job: **translate domain names into IP addresses** so computers can talk to each other.
+
+👉 Example:
+
+* You type: `www.google.com`
+* DNS finds the IP address: `142.250.185.78`
+* Your browser then connects to Google’s server at that IP.
+
+---
+
+### **Why Do We Need DNS?**
+
+* Computers and servers communicate with numbers (**IP addresses**).
+* Humans prefer names (easy to remember).
+* DNS acts as a **translator** between human-friendly names and machine-friendly addresses.
+
+---
+
+### **How DNS Works (Step-by-Step Example)**
+
+Imagine you type `www.example.com` in your browser:
+
+1. **Browser Cache Check**
+
+   * Your browser first checks if it already knows the IP.
+   * If yes → it skips DNS lookup.
+
+2. **Operating System Check**
+
+   * Your computer asks its local DNS resolver (part of your OS or ISP).
+
+3. **Recursive DNS Resolver (ISP’s DNS)**
+
+   * If your system doesn’t know, it asks your **Internet Service Provider’s DNS server**.
+
+4. **Root DNS Server**
+
+   * If ISP doesn’t know, it asks a **Root Server**: “Where can I find `.com` domains?”
+
+5. **TLD (Top-Level Domain) Server**
+
+   * The root server replies: “Ask the `.com` TLD server.”
+   * TLD server knows where `.com` domains are stored.
+
+6. **Authoritative DNS Server**
+
+   * The TLD server points to the **authoritative DNS server** for `example.com`.
+   * This server has the final answer (the IP address).
+
+7. **Response Returned**
+
+   * IP address (e.g., `93.184.216.34`) is returned to your computer.
+   * Browser connects to that IP and loads the site.
+
+👉 This all happens in **milliseconds**.
+
+---
+
+### **Types of DNS Records**
+
+DNS servers hold different types of records, for different purposes:
+
+* **A Record** → Maps a domain to an IPv4 address.
+* **AAAA Record** → Maps a domain to an IPv6 address.
+* **CNAME Record** → Alias of another domain.
+* **MX Record** → Mail Exchange (for emails).
+* **TXT Record** → Stores text, often for verification/security (like SPF, DKIM).
+* **NS Record** → Points to Name Servers that control the domain.
+
+---
+
+### **Simple Analogy**
+
+* **Domain name:** Your friend’s name ("Sofiane").
+* **IP address:** Your friend’s phone number.
+* **DNS:** The phonebook that lets you look up Sofiane’s number when you only know his name.
+
+---
+
+✅ **In summary:**
+
+* **DNS = Internet’s phonebook.**
+* It translates domain names into IP addresses.
+* Without DNS, you’d have to memorize IPs to visit websites.
+
