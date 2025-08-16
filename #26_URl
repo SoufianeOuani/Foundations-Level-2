@@ -1,0 +1,80 @@
+
+### **What is a URL?**
+
+* **URL** stands for **Uniform Resource Locator**.
+* It is the **address of a resource on the Internet**.
+* Just like your home address tells people where you live, a URL tells browsers where to find a file, web page, or service online.
+
+👉 Example of a URL:
+
+```
+https://www.example.com:443/blog/article?id=10#comments
+```
+
+---
+
+### **Parts of a URL (Explained)**
+
+Let’s dissect the example above:
+
+1. **Protocol** → `https://`
+
+   * Defines how data is transferred.
+   * Examples: `http`, `https`, `ftp`, `mailto`.
+
+2. **Subdomain** → `www.`
+
+   * Optional. Could be `www`, `blog`, `mail`, etc.
+
+3. **Domain Name** → `example.com`
+
+   * Human-readable name of the website.
+
+4. **Port (optional)** → `:443`
+
+   * Specifies which port to use.
+   * Default for HTTP = 80, HTTPS = 443.
+   * Often hidden if it’s the default.
+
+5. **Path** → `/blog/article`
+
+   * The exact location of the resource on the server.
+
+6. **Query String (optional)** → `?id=10`
+
+   * Extra data sent to the server.
+   * Used for dynamic content (e.g., filtering, searching).
+
+7. **Fragment (optional)** → `#comments`
+
+   * Points to a specific section within the page.
+   * Example: On a long article, `#comments` jumps directly to the comments section.
+
+---
+
+### **Another Example**
+
+```
+ftp://files.server.com/downloads/setup.zip
+```
+
+* **Protocol:** `ftp://`
+* **Domain:** `files.server.com`
+* **Path:** `/downloads/setup.zip`
+
+---
+
+### **In Simple Words**
+
+* **URL = Full web address** of a resource.
+* **Domain = Just the main name** of the website.
+
+👉 Example:
+
+* Domain: `openai.com`
+* URL: `https://platform.openai.com/docs`
+
+---
+
+✅ **In summary:**
+A **URL** is a complete web address that tells your browser **how** (protocol), **where** (domain + port), and **what** (path + query + fragment) to access.
